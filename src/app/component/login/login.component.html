@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+
+<body>
+<div class="container">
+    <div class="register">
+        <div class="row">
+            <div class="col-md-3 register-left">
+                <img src="https://ubisafe.org/images/transparent-tool-logo-6.png" alt="" />
+                <h3>Bienvenido</h3>
+                <p>Inicio de Sesion en TicoChamberos</p>
+
+            </div>
+            <div class="col-md-9 register-right">
+               
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Iniciar Sesion</h3>
+                        <div class="row register-form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" [(ngModel)] = "login.email" class="form-control" placeholder="Email *"  />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="password"  [(ngModel)]="login.password"  class="form-control" placeholder="Contraseña *"  />
+                                </div>
+                                <!--<input type="submit" class="btnRegister" value="Entrar" />-->
+                                <a type="submit" class="btnRegister" href="/dashboard">Entrar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </div>  
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
